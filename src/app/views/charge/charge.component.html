@@ -1,0 +1,15 @@
+<form class="example-form">
+  <mat-label>Balance: {{balance}}</mat-label>
+  <mat-form-field class="example-full-width">
+    <mat-label>Phone Number </mat-label>
+    <input matInput  id= "phoneNumber" placeholder="Please Enter Phone Number " />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label> Charge Value </mat-label>
+    <input matInput  id= "chargeValue" placeholder="Please Enter The Charge Value" />
+  </mat-form-field>
+  <div class="example-button-row">
+    <button type="button" mat-raised-button color="primary" (click)="Charge()">Charge</button>
+  </div>
+</form>

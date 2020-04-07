@@ -1,0 +1,24 @@
+<form class="example-form">
+  <mat-label>Balance: {{balance}}</mat-label>
+  <mat-form-field class="example-full-width">
+    <mat-label>To : </mat-label>
+    <input matInput id="ID" placeholder="Please Enter Customer Id" />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label > Amount </mat-label>
+    <input matInput  type="number" id= "Amount" placeholder="Please Enter The Amount" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label> Type of currency</mat-label>
+    <mat-select [(value)]="selected">
+      <mat-option value="option1">NIS</mat-option>
+      <mat-option value="option2">Dollars</mat-option>
+      <mat-option value="option3">euro</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <div class="example-button-row">
+    <button mat-raised-button color="primary" (click)="transfer()">Transfer</button>
+  </div>
+</form>
